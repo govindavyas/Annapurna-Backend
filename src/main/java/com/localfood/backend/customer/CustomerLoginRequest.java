@@ -1,0 +1,9 @@
+package com.localfood.backend.customer;
+
+import jakarta.validation.constraints.NotBlank;
+
+public record CustomerLoginRequest(
+    @NotBlank String phone,
+    @NotBlank String password
+) {
+}

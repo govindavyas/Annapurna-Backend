@@ -1,0 +1,160 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.localfood:backend >------------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 12 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.localfood.backend.AdminMenuIntegrationTest
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+20:07:59.365 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.localfood.backend.AdminMenuIntegrationTest]: AdminMenuIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:07:59.437 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.AdminMenuIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-11T20:07:59.701+05:30  INFO 32168 --- [           main] c.l.backend.AdminMenuIntegrationTest     : Starting AdminMenuIntegrationTest using Java 21.0.11 with PID 32168 (started by Govind in D:\Govind\PROJECTS TO COMPLETE\ANNAPURNA\local-food-delivery\backend)
+2026-10-11T20:07:59.702+05:30  INFO 32168 --- [           main] c.l.backend.AdminMenuIntegrationTest     : No active profile set, falling back to 1 default profile: "default"
+2026-10-11T20:08:00.406+05:30  INFO 32168 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11T20:08:00.473+05:30  INFO 32168 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 11 JPA repository interfaces.
+2026-10-11T20:08:01.098+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-11T20:08:01.258+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-10-11T20:08:01.259+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-11T20:08:01.290+05:30  INFO 32168 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:testdb (H2 2.2)
+2026-10-11T20:08:01.295+05:30  WARN 32168 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-10-11T20:08:01.364+05:30  INFO 32168 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-11T20:08:01.365+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.063s)
+2026-10-11T20:08:01.371+05:30  INFO 32168 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-11T20:08:01.393+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-11T20:08:01.398+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - init schema"
+2026-10-11T20:08:01.413+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - seed menu"
+2026-10-11T20:08:01.417+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - menu images"
+2026-10-11T20:08:01.429+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - customer store and order tracking"
+2026-10-11T20:08:01.446+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - store banner and offer controls"
+2026-10-11T20:08:01.460+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - multi branch and admin accounts"
+2026-10-11T20:08:01.469+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - customer push subscriptions"
+2026-10-11T20:08:01.471+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "8 - delivery collection"
+2026-10-11T20:08:01.481+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "9 - branch and team lifecycle"
+2026-10-11T20:08:01.486+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - branch menu and pricing"
+2026-10-11T20:08:01.494+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "11 - customer address and delivery estimate"
+2026-10-11T20:08:01.528+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "12 - menu categories"
+2026-10-11T20:08:01.541+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 12 migrations to schema "public", now at version v12 (execution time 00:00.099s)
+2026-10-11T20:08:01.628+05:30  INFO 32168 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-11T20:08:01.742+05:30  INFO 32168 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-10-11T20:08:01.772+05:30  INFO 32168 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-11T20:08:01.974+05:30  INFO 32168 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11T20:08:02.831+05:30  INFO 32168 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11T20:08:02.854+05:30  INFO 32168 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11T20:08:03.252+05:30  INFO 32168 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11T20:08:03.826+05:30  INFO 32168 --- [           main] c.l.b.c.CustomerPushNotificationService  : Push notifications are disabled (app.push.enabled=false)
+2026-10-11T20:08:04.343+05:30  INFO 32168 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name adminAccountUserDetailsService
+2026-10-11T20:08:05.530+05:30  INFO 32168 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-11T20:08:05.576+05:30  INFO 32168 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-11T20:08:05.576+05:30  INFO 32168 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-11T20:08:05.576+05:30  INFO 32168 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-10-11T20:08:05.628+05:30  INFO 32168 --- [           main] c.l.backend.AdminMenuIntegrationTest     : Started AdminMenuIntegrationTest in 6.092 seconds (process running for 6.814)
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\Govind\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.676 s -- in com.localfood.backend.AdminMenuIntegrationTest
+[INFO] Running com.localfood.backend.BackendApplicationTests
+2026-10-11T20:08:06.912+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:06.913+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.BackendApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-11T20:08:06.929+05:30  INFO 32168 --- [           main] c.l.backend.BackendApplicationTests      : Starting BackendApplicationTests using Java 21.0.11 with PID 32168 (started by Govind in D:\Govind\PROJECTS TO COMPLETE\ANNAPURNA\local-food-delivery\backend)
+2026-10-11T20:08:06.929+05:30  INFO 32168 --- [           main] c.l.backend.BackendApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-10-11T20:08:07.117+05:30  INFO 32168 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11T20:08:07.133+05:30  INFO 32168 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 11 JPA repository interfaces.
+2026-10-11T20:08:07.194+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-11T20:08:07.195+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-10-11T20:08:07.195+05:30  INFO 32168 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-11T20:08:07.196+05:30  INFO 32168 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:testdb (H2 2.2)
+2026-10-11T20:08:07.197+05:30  WARN 32168 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-10-11T20:08:07.204+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.006s)
+2026-10-11T20:08:07.206+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 12
+2026-10-11T20:08:07.206+05:30  INFO 32168 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-11T20:08:07.225+05:30  INFO 32168 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-11T20:08:07.227+05:30  INFO 32168 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-11T20:08:07.233+05:30  INFO 32168 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11T20:08:07.370+05:30  INFO 32168 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11T20:08:07.372+05:30  INFO 32168 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11T20:08:07.478+05:30  INFO 32168 --- [           main] c.l.b.c.CustomerPushNotificationService  : Push notifications are disabled (app.push.enabled=false)
+2026-10-11T20:08:07.581+05:30  INFO 32168 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name adminAccountUserDetailsService
+2026-10-11T20:08:07.735+05:30  INFO 32168 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-11T20:08:07.756+05:30  INFO 32168 --- [           main] c.l.backend.BackendApplicationTests      : Started BackendApplicationTests in 0.841 seconds (process running for 8.943)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.852 s -- in com.localfood.backend.BackendApplicationTests
+[INFO] Running com.localfood.backend.BranchCommerceIntegrationTest
+2026-10-11T20:08:07.766+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.BranchCommerceIntegrationTest]: BranchCommerceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:07.769+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.BranchCommerceIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.590 s -- in com.localfood.backend.BranchCommerceIntegrationTest
+[INFO] Running com.localfood.backend.BranchLifecycleIntegrationTest
+2026-10-11T20:08:09.357+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.BranchLifecycleIntegrationTest]: BranchLifecycleIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:09.358+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.BranchLifecycleIntegrationTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.956 s -- in com.localfood.backend.BranchLifecycleIntegrationTest
+[INFO] Running com.localfood.backend.CategoryAndRangeIntegrationTest
+2026-10-11T20:08:13.313+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.CategoryAndRangeIntegrationTest]: CategoryAndRangeIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:13.314+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.CategoryAndRangeIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.054 s -- in com.localfood.backend.CategoryAndRangeIntegrationTest
+[INFO] Running com.localfood.backend.CustomerProfileIntegrationTest
+2026-10-11T20:08:14.369+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.CustomerProfileIntegrationTest]: CustomerProfileIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:14.370+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.CustomerProfileIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 s -- in com.localfood.backend.CustomerProfileIntegrationTest
+[INFO] Running com.localfood.backend.DeliveryIntegrationTest
+2026-10-11T20:08:14.756+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.DeliveryIntegrationTest]: DeliveryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:14.757+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.DeliveryIntegrationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.589 s -- in com.localfood.backend.DeliveryIntegrationTest
+[INFO] Running com.localfood.backend.OrderFlowIntegrationTest
+2026-10-11T20:08:21.346+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.OrderFlowIntegrationTest]: OrderFlowIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:21.347+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.OrderFlowIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.830 s -- in com.localfood.backend.OrderFlowIntegrationTest
+[INFO] Running com.localfood.backend.TeamAccessIntegrationTest
+2026-10-11T20:08:22.176+05:30  INFO 32168 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localfood.backend.TeamAccessIntegrationTest]: TeamAccessIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-11T20:08:22.178+05:30  INFO 32168 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localfood.backend.BackendApplication for test class com.localfood.backend.TeamAccessIntegrationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.653 s -- in com.localfood.backend.TeamAccessIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.056 s
+[INFO] Finished at: 2026-10-11T20:08:26+05:30
+[INFO] ------------------------------------------------------------------------
